@@ -1,8 +1,8 @@
-FROM node:lts-alpine
+FROM node:lts
 
 COPY root/ /
 
-RUN chmod -R 555 /usr/local/bin/entrypoint.sh
+RUN chmod 555 /usr/local/bin/entrypoint.sh
 
 EXPOSE 22
 
