@@ -2,6 +2,8 @@ FROM node:lts-alpine
 
 COPY root/ /
 
+RUN chmod -R 555 /usr/local/bin/entrypoint.sh
+
 EXPOSE 22
 
 VOLUME /app
